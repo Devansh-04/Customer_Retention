@@ -122,8 +122,6 @@ The brand should shift from broad discounting to segment-based promotional contr
 
 ## Project Structure
 
-## Project Structure
-
 ```text
 CUSTOMER RETENTION/
 │
