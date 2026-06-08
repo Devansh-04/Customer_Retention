@@ -1,0 +1,157 @@
+# SQL-Driven Customer Retention Strategy
+
+## Project Overview
+
+This project analyzes customer transaction and behavior data for a direct-to-consumer fashion brand. The goal is to identify valuable customer segments, understand promotional dependency, and recommend a retention strategy that reduces discount reliance without hurting sales.
+
+The project follows the problem statement: **Decoding Customer Value: A SQL-Driven Retention Strategy**, where the core business question is whether the brand is building a loyal customer base or depending too heavily on promotions.
+
+## Business Problem
+
+The brand has customer purchase data but lacks structured intelligence about:
+
+- Who its most valuable customers are
+- Which customers are loyal versus discount-dependent
+- Which product categories drive repeat purchases
+- Which geographies show strong organic demand
+- How promotions should be redesigned to protect margins
+
+## Tools Used
+
+- **Python**: Data cleaning and feature engineering
+- **SQL**: Customer segmentation and business analysis
+- **Power BI**: Founder dashboard and visual insights
+- **Excel/CSV**: Data storage and query outputs
+
+## Dataset
+
+The dataset contains customer-level transactional and behavioral information such as:
+
+- Age
+- Gender
+- Product category
+- Purchase amount
+- Location
+- Review rating
+- Subscription status
+- Shipping type
+- Discount applied
+- Promo code usage
+- Previous purchases
+- Payment method
+- Purchase frequency
+
+## Feature Engineering
+
+New customer-level features were created to support business decision-making:
+
+- **Value Tier**: Classifies customers into Low, Mid, High, and Premium value groups
+- **Promo Dependency Score**: Measures how dependent a customer is on discounts or promo codes
+- **Satisfaction Flag**: Identifies customers with strong review ratings
+- **Retention Proxy**: Uses previous purchase behavior as a proxy for customer retention
+
+Since the dataset does not contain churn labels, loyalty scores, or timestamps, loyalty and retention were defined using available behavioral variables.
+
+## SQL Analysis
+
+SQL queries were used to answer key business questions:
+
+1. Who are the high-value customers?
+2. Which customers are loyal versus discount-dependent?
+3. Which product categories are linked with stronger repeat purchases?
+4. Which locations show high spend and low promo dependency?
+5. What does the ideal customer profile look like?
+
+## Power BI Dashboard
+
+A four-panel founder dashboard was created with:
+
+1. **Customer Value Pyramid**  
+   Shows revenue contribution by customer value tier.
+
+2. **Promo Dependency vs Retention**  
+   Compares customer segments based on promotional dependency and repeat purchase behavior.
+
+3. **Geographic Opportunity Analysis**  
+   Identifies locations with strong average spend and lower promo dependency.
+
+4. **Category Funnel**  
+   Shows which categories act as entry-point categories and which categories support repeat purchases.
+
+The dashboard is designed for a non-technical founding team to quickly understand customer value, discount reliance, and growth opportunities.
+
+## Key Insights
+
+- Premium Value customers contribute the strongest revenue.
+- High-value customers show stronger repeat purchase behavior.
+- Some customer segments show high retention even without heavy promotional reliance.
+- Low-value and promo-dependent customers may require controlled promotional offers.
+- Certain geographies show strong spend with lower discount dependency, suggesting organic brand pull.
+- Some categories work better for acquisition, while others are stronger for retention.
+
+## Business Recommendations
+
+### 1. Gradual Promo Sunset Plan
+
+The brand should not remove discounts for all customers at once. Instead, it should gradually reduce discounts for Premium and High Value customers who already show strong repeat purchase behavior.
+
+### 2. Replace Discounts with Loyalty Benefits
+
+For valuable customers, direct discounts can be replaced with:
+
+- Early access to new collections
+- Free shipping
+- Exclusive product drops
+- Loyalty rewards
+
+### 3. Continue Controlled Promotions for Sensitive Segments
+
+Low-value and promo-dependent customers should still receive offers, but through controlled mechanisms such as:
+
+- Minimum order value discounts
+- Category-specific discounts
+- Limited-time campaigns
+
+### 4. Target High-Spend, Low-Promo Regions
+
+Marketing campaigns should prioritize locations where customers already show high average spend and low promo dependency.
+
+## Final Recommendation
+
+The brand should shift from broad discounting to segment-based promotional control. This allows the company to protect revenue, reduce unnecessary discounting, improve margins, and retain its most valuable customers.
+
+## Project Structure
+
+## Project Structure
+
+```text
+CUSTOMER RETENTION/
+│
+├── dashboard/
+│   ├── dashboard.pbix
+│   └── powerbi_dashboard.png
+│
+├── data/
+│   ├── processed/
+│   └── raw/
+│
+├── notebooks/
+│   ├── .ipynb_checkpoints/
+│   ├── customer_segmentation.ipynb
+│   ├── data_cleaning.ipynb
+│   └── feature_engineering.ipynb
+│
+├── reports/
+│   ├── executive_summary.md
+│   └── retention_playbook.md
+│
+├── sql/
+│   ├── sql_category_funnel.csv
+│   ├── sql_customer_pyramid.csv
+│   ├── sql_geo_opportunity.csv
+│   ├── sql_ideal_customer_profile.csv
+│   ├── sql_promo_dependency.csv
+│   └── sql_segment_comparison.csv
+│
+└── readme.md
+```

@@ -1,0 +1,6 @@
+customer_segment,customer_count,avg_purchase_amount,avg_previous_purchases,avg_promo_dependency,avg_review_rating,avg_retention_score
+Promo-Dependent Regulars,442,60.04,44.13,1.0,3.72,0.726
+One-Time Bargain Hunters,1235,59.01,19.16,1.0,3.75,0.429
+Stable Mid-Value Customers,1087,60.07,28.01,0.0,4.13,0.522
+Champions,164,62.79,44.18,0.0,4.47,0.778
+At-Risk Low Value Customers,972,59.74,18.53,0.0,3.22,0.417

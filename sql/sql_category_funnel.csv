@@ -1,0 +1,5 @@
+category,customer_count,avg_purchase_amount,avg_previous_purchases,avg_frequency_score,avg_retention_score,avg_promo_dependency
+Outerwear,324,57.17,24.96,4.24,0.502,0.444
+Footwear,599,60.26,25.23,4.19,0.502,0.432
+Accessories,1240,59.84,25.73,4.08,0.502,0.438
+Clothing,1737,60.03,25.2,4.1,0.497,0.421

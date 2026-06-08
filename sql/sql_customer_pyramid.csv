@@ -1,0 +1,5 @@
+value_tier,customer_count,avg_purchase_amount,avg_previous_purchases,avg_value_score,total_revenue
+Premium Value,975,78.75,35.44,0.605,76786.0
+High Value,975,65.0,27.59,0.468,63374.0
+Mid Value,975,54.36,23.08,0.375,53004.0
+Low Value,975,40.94,15.29,0.243,39917.0
